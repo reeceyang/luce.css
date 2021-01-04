@@ -1,0 +1,55 @@
+:root {
+  --background: #f8f8f8;
+  --background-darker: #eee;
+  --border: #ccc;
+  --hover: #ddd;
+  --text: black;
+}
+
+.luce-dark {
+  --background: #242424;
+  --background-darker: #363636;
+  --hover: #484848;
+  --text: #ddd;
+  --border: #303030;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.luce-container {
+  max-width: 40em;
+  margin: auto;
+}
+
+.luce-input, .luce-textarea, .luce-button {
+  background-color: var(--background-darker);
+  border: hidden;
+  border-bottom: solid var(--hover);
+  color: inherit;
+  outline: none;
+  font: inherit;
+  padding: 0.2em;
+  transition: 0.25s;
+}
+
+.luce-input:focus, .luce-textarea:focus, .luce-button:focus {
+  background-color: var(--hover);
+}
+
+.luce-button:hover {
+  background-color: var(--hover);
+  cursor: pointer;
+}
+
+.luce-button:active {
+  transform: translateY(0.2em);
+}
