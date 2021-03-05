@@ -1,17 +1,17 @@
 :root {
-  --background: #f8f8f8;
-  --background-darker: #eee;
-  --border: #ccc;
-  --hover: #ddd;
-  --text: black;
+  --luce-background: #f8f8f8;
+  --luce-background-darker: #eee;
+  --luce-border: #ccc;
+  --luce-hover: #ddd;
+  --luce-text: black;
 }
 
 .luce-dark {
-  --background: #242424;
-  --background-darker: #363636;
-  --hover: #484848;
-  --text: #ddd;
-  --border: #303030;
+  --luce-background: #242424;
+  --luce-background-darker: #363636;
+  --luce-hover: #484848;
+  --luce-text: #ddd;
+  --luce-border: #303030;
 }
 
 * {
@@ -21,8 +21,8 @@
 }
 
 body {
-  background-color: var(--background);
-  color: var(--text);
+  background-color: var(--luce-background);
+  color: var(--luce-text);
 }
 
 .luce-container {
@@ -31,9 +31,9 @@ body {
 }
 
 .luce-input, .luce-textarea, .luce-button {
-  background-color: var(--background-darker);
+  background-color: var(--luce-background-darker);
   border: hidden;
-  border-bottom: solid var(--hover);
+  border-bottom: solid var(--luce-hover);
   color: inherit;
   outline: none;
   font: inherit;
@@ -42,11 +42,11 @@ body {
 }
 
 .luce-input:focus, .luce-textarea:focus, .luce-button:focus {
-  background-color: var(--hover);
+  background-color: var(--luce-hover);
 }
 
 .luce-button:hover {
-  background-color: var(--hover);
+  background-color: var(--luce-hover);
   cursor: pointer;
 }
 
